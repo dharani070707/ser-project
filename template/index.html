@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title style="font-size: 25px; color: white;">Speech Emotion Recognition</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/vendor.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <!-- script
+   ================================================== -->
+    <script src="/static/js/modernizr.js"></script>
+    <script src="/static/js/pace.min.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header 
+   ================================================== -->
+   <header id="header" class="row">   
+
+   		<div class="header-logo">
+	        <a href="index.html">Speech Emotion Recognition</a>
+	    </div>
+
+	   	<nav id="header-nav-wrap">
+			<ul class="header-main-nav">
+				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+				<li><a class="smoothscroll"  href="#steps" title="steps">Steps</a></li>
+				<li><a class="smoothscroll"  href="#testimonials" title="testimonials">About Us</a></li>	
+			</ul>
+
+            <a href="#predict" title="sign-up" class="button button-primary cta">Predict</a>
+		</nav>
+
+		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
+   	
+   </header> <!-- /header -->
+
+
+   <!-- home
+   ================================================== -->
+   <section id="home" data-parallax="scroll" data-image-src="/static/css/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000>
+
+        <div class="overlay"></div>
+        <div class="home-content">        
+
+            <div class="row contents">                     
+                <div class="home-content-left">
+
+                    <h3 data-aos="fade-up">Welcome to Speech Emotion Recognition</h3>
+
+                    <h1 data-aos="fade-up">
+                        <p class="p1">"Your emotions are the slaves to your thoughts, and you are the slave to your emotions."</p>
+                        <p class="p2">Elizabeth Gilbert</p>
+                    </h1>
+
+                    <!-- <div class="buttons" data-aos="fade-up">
+                        <a href="#download" class="smoothscroll button stroke">
+                            <span class="icon-circle-down" aria-hidden="true"></span>
+                            Download App
+                        </a>
+                        <a href="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=39b54a" data-lity class="button stroke">
+                            <span class="icon-play" aria-hidden="true"></span>
+                            Watch Video
+                        </a>
+                    </div> -->                                   
+
+                </div>
+
+                <div class="home-image-right">
+                    <img src="/static/css/images/emote-940.png" 
+                        srcset="/static/css/images/emote-470.png 1x, /static/css/images/emote-940.png 2x"  
+                        data-aos="fade-up">
+                </div>
+            </div>
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social-list">
+            <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+        </ul>
+        <!-- end home-social-list -->
+
+        <div class="home-scrolldown">
+            <a href="#about" class="scroll-icon smoothscroll">
+                <span>Scroll Down</span>
+                <i class="icon-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </section> <!-- end home -->  
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about">
+
+        <div class="row about-intro">
+
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="fade-up">About Our Project</h1>
+            </div>
+            <div class="col-eight">
+                <p class="lead" data-aos="fade-up">
+                    The recognition of emotions is automatic and unconscious by humans. This is a vital process for people to
+            communicate with each other and thus, to get a better interaction from the human machine, emotions have to be
+            considered. Hence we have developed an application capable of rendering emotion based of the human speech using an Machine Learning model.
+                </p>
+            </div>                       
+            
+        </div>
+
+        <div class="row about-features">
+
+            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+
+                <div class="bgrid feature" data-aos="fade-up">	
+
+                    <span class="icon"><i class="icon-window"></i></span>            
+
+                    <div class="service-content">	
+
+                        <h3>Fully Resposive</h3>
+
+                        <p>The website is fully responsive and enables users to play around and have good time adjusting to the environment. The project was made with the view to add more accuracy for the model by adding more dataset enhancement through daily activities.
+                        </p>
+                    </div> 	         	 
+ 	               
+
+                </div> <!-- /bgrid -->
+
+                    <div class="bgrid feature" data-aos="fade-up">
+
+                        <span class="icon"><i class="icon-file"></i></span>	              
+
+                    <div class="service-content">
+                        <h3>Clean Code</h3>
+
+                        <p>We have used clean python modules with very less imports as possible and have aimed at achieveing clean and clear code. Model was delveloped in python , front end in HTML, CSS ,JAVASCRIPT. And the integration was done in Flask. 
+                        </p>
+                    </div>                         
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-gift"></i></span>	   	           
+
+                    <div class="service-content">
+                        <h3>Free of Charge</h3>
+
+                        <p>The project is free of cost for users we will avoid any financing schemes like ads to keep the web application clean and user friendly. Thank you and hope you have a great time Browsing
+                            
+                    </div>	               
+
+                </div> <!-- /bgrid -->
+
+            </div> <!-- end features-list -->
+
+        </div> <!-- end about-features -->
+
+          
+        
+    </section> <!-- end about -->  
+   
+
+    <!-- pricing
+    ================================================== -->
+    <section id="steps">
+        <section id="about">
+        <div class="row about-how">
+          
+            <h1 class="intro-header" data-aos="fade-up">How This Works?</h1>           
+
+            <div class="about-how-content" data-aos="fade-up">
+                <div class="about-how-steps block-1-2 block-tab-full group">
+
+                    <div class="bgrid step" data-item="1">
+                        <h3>Record</h3>
+                        <p>Record the speech/voice of which the emotion has to be recognized(Avoid any auto-tuning and other noise for better accuracy)
+                        </p> 
+                    </div>
+
+                    <div class="bgrid step" data-item="2">
+                        <h3>Upload</h3>
+                        <p>Upload the file in the form of .wav
+                        </p> 
+                    </div>               
+               
+                    <div class="bgrid step" data-item="3">
+                        <h3>Action</h3>
+                        <p>Click on the predict emotion button.
+                        </p> 
+                    </div>
+
+                    <div class="bgrid step" data-item="4">
+                        <h3>Result</h3>
+                        <p>An relevent emotion along with an relent emote will be displayed.
+                  (consider the fact that the prediction is done by an trained ML model and can be prone to errors)
+                        </p> 
+                    </div>
+  
+
+                </div>           
+           </div> <!-- end about-how-content -->
+
+        </div> <!-- end about-how -->  
+    </section><!--end about -->
+    </section> <!-- end pricing -->
+
+
+    <!-- Testimonials Section
+    ================================================== -->
+    <section id="testimonials">
+
+        <div class="row">
+            <div class="col-twelve">
+                <h1 class="intro-header" data-aos="fade-up">Developers</h1>
+            </div>   		
+        </div>   	
+
+        <div class="row owl-wrap">
+
+            <div id="testimonial-slider"  data-aos="fade-up">
+
+                <div class="slides owl-carousel">
+
+                    <div>
+                        <p>
+                        Developed By final year DSATM student!
+                        Live to code!!
+                        </p> 
+
+                        <div class="testimonial-author">
+                                <img src="/static/css/images/DHARANI.jpg" alt="Author image" style="height: 200px; width: 300px;">
+                                <div class="author-info">
+                                    Dharani Prasad S
+                                    <span class="position">LEAD ML MODEL DEVELOPER AND FULL-STACK DEVELOPER </span>
+                                </div>
+                        </div>                 
+                    </div> 
+
+                    <div>
+                        <p>
+                            Developed By final year DSATM student!
+                            Code , Coffee And Repeat
+                        </p>
+
+                        <div class="testimonial-author">
+                                <div class="author-info">
+                                    <img src="/static/css/images/avatars/brij.jpg" alt="Author image" style="height: 200px; width: 300px;">
+                                    Brij Vishal Rajput
+                                    <span>ML MODEL DATASET MANANGER AND UI/UX DESIGNER</span>
+                                </div>
+                        </div>                                         
+                    </div> 
+                    <div>
+                        <p>
+                            Developed By final year DSATM student!
+                            Code , Coffee And Repeat
+                        </p>
+
+                        <div class="testimonial-author">
+                                <div class="author-info">
+                                    <img src="/static/css/images/avatars/aditya.jpg" alt="Author image" style="height: 200px; width: 300px;">
+                                    ADITHYA B
+                                    <span>UI/UX DESIGNER AND DOCUMENTATION</span>
+                                </div>
+                        </div>                                         
+                    </div> 
+                    <div>
+                        <p>
+                            Developed By final year DSATM student!
+                            Code , Coffee And Repeat
+                        </p>
+
+                        <div class="testimonial-author">
+                                <div class="author-info">
+                                    <img src="/static/css/images/avatars/dhanjit.jpg" alt="Author image" style="height: 200px; width: 300px;">
+                                    DHANJIT DEKA
+                                    <span>UI/UX DESIGNER AND FRONT END DEVELOPER</span>
+                                </div>
+                        </div>                                         
+                    </div> 
+
+                </div> <!-- end slides -->
+
+            </div> <!-- end testimonial-slider -->         
+            
+        </div> <!-- end flex-container -->
+
+    </section> <!-- end testimonials -->
+    
+
+    <!-- download
+    ================================================== -->
+    <section id="predict" data-aos="fade-up">
+
+        <div class="row">
+            <div class="col-full">
+                <h1 class="intro-header"  data-aos="fade-up">Prediction</h1>
+
+        <section class="upload-file" data-aos="fade-up">
+            <h2>Upload File</h2>
+            <form action="{{ url_for('submit')}}" method="POST" enctype="multipart/form-data">
+                <label for="file-upload">Choose file to upload:</label>
+                <input type="file"  name="file">
+                <input type = "submit" value="Upload">
+            </form>
+        </section>
+        <section class="output" data-aos="fade-up">
+            <h2>Output</h2>
+            <div class="result-emoji-box">
+                <form action="{{ url_for('predict')}}" method="GET" enctype="multipart/form-data">
+                    <input type="submit", value="predict">
+                  </form>
+                <div class="result-box">
+                <p>Result:</p>
+                <span id="result"></span>
+                <h2>{{prediction_text}}</h2>      
+                <img src="{{ path1 }}" alt="{{ path1 }}" height="200" width="300">  
+                </div>
+            </div>
+        </section>        
+
+            </div>
+        </div>
+
+    </section> <!-- end predict -->    
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="footer-main">
+            <div class="row">  
+
+                <div class="col-three md-1-3 tab-full footer-info">            
+
+                    <div class="footer-logo"></div>
+
+                    <p>
+                    
+                    </p>
+
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    
+                    
+                </div> <!-- end footer-info -->
+
+                <div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
+
+                    <h4>Contact</h4>
+
+                    <p>
+                    Dharani Prasad S <br>
+                    Bnagalore<br>
+                    560061<br>		        
+                    </p>
+
+                    <p>
+                    prasadsdharani@gmail.com <br>
+                    Phone: (+91)86182 86109 <br>    
+                    </p>                    
+
+                </div> <!-- end footer-contact -->  
+
+                <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+
+                    <h4>Site Links</h4>
+
+                    <ul class="list-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>	      		
+                            
+                </div> <!-- end footer-site-links --> 
+
+                <div class="col-four md-1-2 tab-full footer-subscribe">
+
+                    <h4>Any queries?</h4>
+
+                    <p>Kindly contact developer. <br>
+                    </p>
+
+                    <div class="subscribe-form">
+                
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required=""> 
+                
+                            <input type="submit" name="subscribe" value="Send">
+                
+                            <label for="mc-email" class="subscribe-message"></label>
+                
+                        </form>
+
+                    </div>	      		
+                            
+                </div> <!-- end footer-subscribe -->         
+
+            </div> <!-- /row -->
+        </div> <!-- end footer-main -->
+
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright SER 2023.</span> 
+		         	<span>Design by <a href="#">DSATM FINAL YEAR STUDENTS</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> <!-- end footer-bottom -->     	
+
+      </div>
+
+    </footer>
+
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>  
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/js/jquery-2.1.3.min.js"></script>
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
